@@ -46,6 +46,7 @@
             button_multiplicação = new Button();
             button_igual = new Button();
             button_delete = new Button();
+            textBox1 = new TextBox();
             button_AC = new Button();
             label_Digitos = new Label();
             SuspendLayout();
@@ -264,6 +265,15 @@
             button_delete.UseVisualStyleBackColor = true;
             button_delete.Click += Button_delete_Click;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(81, 35);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(185, 41);
+            textBox1.TabIndex = 18;
+            textBox1.TextAlign = HorizontalAlignment.Right;
+            // 
             // button_AC
             // 
             button_AC.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
@@ -294,6 +304,7 @@
             ClientSize = new Size(275, 307);
             Controls.Add(label_Digitos);
             Controls.Add(button_AC);
+            Controls.Add(textBox1);
             Controls.Add(button_delete);
             Controls.Add(button_igual);
             Controls.Add(button_multiplicação);
@@ -315,6 +326,7 @@
             Name = "Form1";
             Text = "Calculadora";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -337,6 +349,7 @@
         private Button button_multiplicação;
         private Button button_igual;
         private Button button_delete;
+        private TextBox textBox1;
         private Button button_AC;
         private Label label_Digitos;
     }
